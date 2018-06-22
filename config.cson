@@ -1,0 +1,122 @@
+"*":
+  Hydrogen:
+    autoScroll: false
+    languageMappings: "{ \"babel\": \"babel es6 javascript\" }"
+  "atom-jest-snippets":
+    toggleSemicolons: false
+  autosave:
+    enabled: true
+  "city-lights-ui": {}
+  core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".hgrc"
+        ".flowconfig"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "whitespace"
+    ]
+    excludeVcsIgnoredPaths: false
+    telemetryConsent: "limited"
+  editor:
+    fontFamily: "Operator Mono, Menlo, Consolas, DejaVu Sans Mono, monospace"
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "c925ddc1-abd9-4825-8868-12fb6ab3a060"
+  "file-icons": {}
+  "fuzzy-finder":
+    ignoredNames: [
+      "node_modules"
+    ]
+  "highlight-line":
+    enableUnderline: true
+  "linter-eslint":
+    rulesToDisableWhileFixing: [
+      "no-debugger"
+    ]
+  "linter-ui-default":
+    panelHeight: 284
+  nuclide:
+    installRecommendedPackages: true
+    "nuclide-file-tree":
+      showOpenFiles: false
+      showUncommittedChanges: false
+    "nuclide-home":
+      showHome: false
+    "nuclide-working-sets":
+      workingSets: [
+        {
+          active: false
+          name: "Frontend"
+          uris: [
+            "/Users/david.weedon/repos/inexa/frontend/.babelrc"
+            "/Users/david.weedon/repos/inexa/frontend/.eslintrc.js"
+            "/Users/david.weedon/repos/inexa/frontend/.gitignore"
+            "/Users/david.weedon/repos/inexa/frontend/internals"
+            "/Users/david.weedon/repos/inexa/frontend/node_modules"
+            "/Users/david.weedon/repos/inexa/frontend/package.json"
+            "/Users/david.weedon/repos/inexa/frontend/src"
+            "/Users/david.weedon/repos/inexa/frontend/tests"
+          ]
+        }
+        {
+          active: true
+          name: "Core"
+          uris: [
+            "/Users/david.weedon/repos/inexa/core-service/.babelrc"
+            "/Users/david.weedon/repos/inexa/core-service/.eslintrc.js"
+            "/Users/david.weedon/repos/inexa/core-service/.gitignore"
+            "/Users/david.weedon/repos/inexa/core-service/bin"
+            "/Users/david.weedon/repos/inexa/core-service/config.js"
+            "/Users/david.weedon/repos/inexa/core-service/data"
+            "/Users/david.weedon/repos/inexa/core-service/index.js"
+            "/Users/david.weedon/repos/inexa/core-service/knexfile.js"
+            "/Users/david.weedon/repos/inexa/core-service/migrations"
+            "/Users/david.weedon/repos/inexa/core-service/node_modules"
+            "/Users/david.weedon/repos/inexa/core-service/package.json"
+            "/Users/david.weedon/repos/inexa/core-service/seeds"
+            "/Users/david.weedon/repos/inexa/core-service/src"
+            "/Users/david.weedon/repos/inexa/core-service/test"
+          ]
+        }
+      ]
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      excludedGlobs: [
+        "*.style.js"
+        "*.styled.js"
+      ]
+      isDisabledIfNoConfigFile: true
+      javascriptScopes: [
+        "source.js"
+        "source.jsx"
+        "source.js.jsx"
+        "source.babel"
+        "source.js-semantic"
+        "text.html.basic"
+        "text.html.vue"
+        "!source.style.js"
+      ]
+      showInStatusBar: true
+    prettierEslintOptions: {}
+    prettierOptions:
+      semi: false
+      singleQuote: true
+      trailingComma: "all"
+    useEslint: true
+  "tool-bar":
+    position: "Bottom"
+  "tree-view":
+    alwaysOpenExisting: true
+    autoReveal: true
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false

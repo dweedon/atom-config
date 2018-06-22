@@ -1,0 +1,232 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/yg/j5t1kwm50079rx0h743d9cyr0000gn/T/d-118522-8805-pizhd8.s8k94zehfr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/yg/j5t1kwm50079rx0h743d9cyr0000gn/T/d-118522-8805-pizhd8.s8k94zehfr/package.tgz",
+        "spec": "/private/var/folders/yg/j5t1kwm50079rx0h743d9cyr0000gn/T/d-118522-8805-pizhd8.s8k94zehfr/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/yg/j5t1kwm50079rx0h743d9cyr0000gn/T/apm-install-dir-118522-8805-8ju1bo.vsb4o39pb9"
+    ]
+  ],
+  "_from": "../d-118522-8805-pizhd8.s8k94zehfr/package.tgz",
+  "_id": "tester@1.4.0",
+  "_inCache": true,
+  "_location": "/tester",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/yg/j5t1kwm50079rx0h743d9cyr0000gn/T/d-118522-8805-pizhd8.s8k94zehfr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/yg/j5t1kwm50079rx0h743d9cyr0000gn/T/d-118522-8805-pizhd8.s8k94zehfr/package.tgz",
+    "spec": "/private/var/folders/yg/j5t1kwm50079rx0h743d9cyr0000gn/T/d-118522-8805-pizhd8.s8k94zehfr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118522-8805-pizhd8.s8k94zehfr/package.tgz",
+  "_shasum": "cbffa1f7ab42b9d116dce4ac051d42ef04b5731d",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/yg/j5t1kwm50079rx0h743d9cyr0000gn/T/d-118522-8805-pizhd8.s8k94zehfr/package.tgz",
+  "_where": "/private/var/folders/yg/j5t1kwm50079rx0h743d9cyr0000gn/T/apm-install-dir-118522-8805-8ju1bo.vsb4o39pb9",
+  "author": {
+    "name": "yacut"
+  },
+  "bugs": {
+    "url": "https://github.com/yacut/tester/issues"
+  },
+  "configSchema": {
+    "testOnOpen": {
+      "title": "Test on Open",
+      "description": "Should test files on open?",
+      "type": "boolean",
+      "default": true
+    },
+    "testOnSave": {
+      "title": "Test on Save",
+      "description": "Should test files on save?",
+      "type": "boolean",
+      "default": true
+    },
+    "gutterEnabled": {
+      "title": "Gutter Enabled",
+      "description": "Should show test results in gutter highlights?",
+      "type": "boolean",
+      "default": true
+    },
+    "gutterPosition": {
+      "title": "Gutter Position",
+      "description": "Where should be the position of the gutter highlights?",
+      "enum": [
+        "Left",
+        "Right"
+      ],
+      "type": "string",
+      "default": "Right"
+    },
+    "ansiToHtml": {
+      "title": "Convert ansi console output to html",
+      "description": "If console output has ansi colors should it convert to html colors?",
+      "type": "boolean",
+      "default": true
+    },
+    "showInlineError": {
+      "title": "Show errors inline after test run",
+      "description": "Should show errors in text editor after test run?",
+      "type": "boolean",
+      "default": false
+    },
+    "inlineErrorPosition": {
+      "title": "Inline error position",
+      "description": "Should show errors in text editor after or before test case?",
+      "type": "string",
+      "enum": [
+        "after",
+        "before",
+        "tail"
+      ],
+      "default": "tail"
+    },
+    "showNotifications": {
+      "title": "Show notifications after test run",
+      "description": "Should show notifications after test run if editor not active?",
+      "type": "boolean",
+      "default": true
+    },
+    "scrollToBottom": {
+      "title": "Scroll console output to bottom after test run",
+      "description": "Should scroll console output to bottom after test run?",
+      "type": "boolean",
+      "default": true
+    },
+    "showStatusBar": {
+      "title": "Show status bar",
+      "description": "Should show status bar?",
+      "type": "boolean",
+      "default": true
+    },
+    "statusBarOnClick": {
+      "title": "Status Bar on click",
+      "description": "What should opens on status bar click?",
+      "type": "string",
+      "enum": [
+        "console",
+        "results",
+        "both"
+      ],
+      "default": "both"
+    },
+    "statusBarPosition": {
+      "title": "Status bar position",
+      "description": "Which position should be status bar: left or right?",
+      "type": "string",
+      "enum": [
+        "Left",
+        "Right"
+      ],
+      "default": "Left"
+    },
+    "statusBarPriority": {
+      "title": "Status bar priority",
+      "description": "Lower priority tiles are placed further to the position side.",
+      "type": "integer",
+      "default": 0,
+      "minimum": -1000,
+      "maximum": 1000
+    },
+    "softWrapDefault": {
+      "title": "Soft Wrap default",
+      "description": "Should wrap the text in results view?",
+      "type": "boolean",
+      "default": true
+    },
+    "removeCurrentFileFilterIfProjectTest": {
+      "title": "Remove current file only filter if project test run",
+      "description": "Should remove current file filter if project test run?",
+      "type": "boolean",
+      "default": true
+    },
+    "testStateStyle": {
+      "title": "Test state style",
+      "description": "Show results state as text or icon?",
+      "type": "string",
+      "enum": [
+        "Text",
+        "Icon"
+      ],
+      "default": "Text"
+    }
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    },
+    "tester": {
+      "versions": {
+        "^1.0.0": "consumeTester"
+      }
+    }
+  },
+  "dependencies": {
+    "ansi-to-html": "0.6.2",
+    "atom-package-deps": "4.6.0",
+    "etch": "0.12.4",
+    "glob-to-regexp": "0.3.0",
+    "redux": "3.6.0",
+    "redux-observable": "0.14.1",
+    "rxjs": "5.4.0"
+  },
+  "description": "A interactive test runner with IDE based Feedback",
+  "deserializers": {
+    "tester-result-view": "deserializeResultView",
+    "tester-console-output": "deserializeConsoleOutput"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-eslint": "7.2.3",
+    "babel-preset-es2015": "6.24.1",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb-base": "11.2.0",
+    "eslint-plugin-flowtype": "2.34.0",
+    "eslint-plugin-import": "2.3.0",
+    "eslint-plugin-jsx-a11y": "4.0.0",
+    "eslint-plugin-react": "7.0.1",
+    "flow-bin": "0.47.0"
+  },
+  "engines": {
+    "atom": ">=1.7.0 <2.0.0"
+  },
+  "homepage": "https://github.com/yacut/tester#readme",
+  "keywords": [
+    "test",
+    "tester",
+    "testing",
+    "interactive",
+    "mocha",
+    "jest",
+    "phpunit",
+    "wallaby.js"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "tester",
+  "optionalDependencies": {},
+  "readme": "# Tester\n\n[![Build Status](https://travis-ci.org/yacut/tester.svg)](https://travis-ci.org/yacut/tester)\n[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/yacut/tester?svg=true)](https://ci.appveyor.com/api/projects/status/github/yacut/tester)\n[![APM Version](https://img.shields.io/apm/v/tester.svg)](https://atom.io/packages/tester)\n[![APM Downloads](https://img.shields.io/apm/dm/tester.svg)](https://atom.io/packages/tester)\n[![GitHub stars](https://img.shields.io/github/stars/yacut/tester.svg)](https://github.com/yacut/tester/stargazers)\n[![GitHub issues](https://img.shields.io/github/issues/yacut/tester.svg)](https://github.com/yacut/tester/issues)\n[![Dependency Status](https://david-dm.org/yacut/tester.svg)](https://david-dm.org/yacut/tester)\n\nTester is a test runner for the hackable [Atom Editor](http://atom.io). Additionally, you need to install a specific tester provider for your test framework. You will find a full list below in the [Known provider](#known-providers) section.\n\n![Preview](https://raw.githubusercontent.com/yacut/tester/master/resources/preview.gif)\n\n### Base Features\n- IDE based Feedback\n\n  - Gutter test result markers\n\n    ![gutter-markers](https://raw.githubusercontent.com/yacut/tester/master/resources/gutter-markers.png)\n\n  - In-line error messages\n\n    ![inline-error](https://raw.githubusercontent.com/yacut/tester/master/resources/inline-error.png)\n\n  - Console test output\n\n    ![console-output](https://raw.githubusercontent.com/yacut/tester/master/resources/console-output.png)\n\n  - Test result view\n\n    ![result-view](https://raw.githubusercontent.com/yacut/tester/master/resources/result-view.png)\n\n- Session based test watching\n  - Test file on open\n  - Test file after save\n  - Test project\n\n- Supported test frameworks (for now):\n  * [Mocha](https://mochajs.org/)\n  * [Jest](https://github.com/facebook/jest)\n  * [PHPUnit](https://phpunit.de/)\n\n#### How to / Installation\n\nYou can install through the CLI by doing:\n\n```\n$ apm install tester\n```\n\nOr you can install from Settings view by searching for `Tester`.\n\n### Known providers\n\n* [Mocha](https://atom.io/packages/tester-mocha) test runner.\n* [Jest](https://atom.io/packages/tester-jest) test runner.\n* [PHPUnit](https://atom.io/packages/tester-phpunit) test runner.\n\n### Tester API\n\n#### Example\n\nDeclare the provider callback in the `package.json`.\n\n```js\n\"providedServices\": {\n  \"tester\": {\n    \"versions\": {\n      \"1.0.0\": \"provideTester\"\n    }\n  }\n}\n```\n\nDefine the provider callback in `lib/main.js`.\n\n```js\nexport function provideTester() {\n  return {\n    name: 'tester-name',\n    options: {},\n    scopes: ['**/test/*.js', '**/*spec.js'],\n    test(textEditor/* or null to run project tests*/, additionalArgs/* from results views*/) {\n      // Note, a Promise may be returned as well!\n      return {\n        messages: [\n          {\n            duration: 1, // duration in ms\n            error: {\n              name: 'optional error object',\n              message: 'something went wrong',\n              actual: 'optional actual result', // can be an object\n              expected: 'optional expected result', // can be an object\n              operator: 'optional operator',\n            },\n            filePath: 'file path to highlight',\n            lineNumber: 1, // line number to highlight\n            state: 'failed', // 'passed' | 'failed' | 'skipped',\n            title: 'some test title',\n          }\n        ],\n        output: 'tester console output'\n      };\n    },\n    stop() {\n      // stop tester if needed\n    }\n  };\n}\n```\n\n### Inspiration\n\nI'd like to give a shout out to [Wallaby.js](https://wallabyjs.com/), which is a significantly more comprehensive and covers a lot more editors, if this extension interests you - check out that too.\n\n### Contribute\n\nStick to imposed code style:\n\n* `$ npm install`\n* `$ npm test`\n\n### Roadmap\n\n- [x] add unknown status for test which not ran\n- [x] replace all views with react components (etch)\n- [x] add table view with results similar to nuclide diagnostics\n  - [x] sort data by column head click\n  - [x] quick set additional args for test runner\n  - [x] merge results from each test runner\n  - [x] re-sizable columns\n  - [ ] side by side diff view for expectations\n  - [x] go to next/previous test commands\n- [x] add run all project tests command\n- [x] implement [Redux](https://github.com/reactjs/redux) and [redux-observable](https://github.com/redux-observable/redux-observable) for result view\n- [x] [serialization](http://flight-manual.atom.io/hacking-atom/sections/package-active-editor-info/#serialization)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yacut/tester.git"
+  },
+  "scripts": {
+    "test": "(apm test) && (flow check) && (eslint . )"
+  },
+  "version": "1.4.0"
+}

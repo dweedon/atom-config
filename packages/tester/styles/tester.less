@@ -1,0 +1,312 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.gutter[gutter-name=tester] {
+    min-width: 0.5em;
+}
+
+atom-text-editor.editor .tester-gutter {
+  width: 100%;
+  height: 90% !important;
+  border-radius: 3px;
+}
+
+atom-text-editor.editor .tester-row {
+  /* Take up the full allowed width */
+  left: 0;
+  right: 0;
+  /* Align the tester dot in the middle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+atom-text-editor.editor .tester-highlight, .tester-highlight{
+  &.badge {
+    border-radius: @component-border-radius;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &.failed {
+    &:not(.line-number){
+      background-color: @background-color-error;
+      color: contrast(@background-color-error);
+    }
+    .tester-gutter{
+      color: @background-color-error;
+    }
+    .region {
+      border-bottom: 1px dashed @background-color-error;
+    }
+  }
+  &.skipped {
+    &:not(.line-number){
+      background-color: @background-color-warning;
+      color: contrast(@background-color-warning);
+    }
+    .tester-gutter{
+      color: @background-color-warning;
+    }
+    .region {
+      border-bottom: 1px dashed @background-color-warning;
+    }
+  }
+  &.passed {
+    &:not(.line-number){
+      background-color: @background-color-success;
+      color: contrast(@background-color-success);
+    }
+    .tester-gutter{
+      color: @background-color-success;
+    }
+    .region {
+      border-bottom: 1px dashed @background-color-success;
+    }
+  }
+  &.unknown {
+    &:not(.line-number){
+      background-color: #939395;
+      color: contrast(#939395);
+    }
+    .tester-gutter{
+      color: #939395;
+    }
+    .region {
+      border-bottom: 1px dashed #939395;
+    }
+  }
+
+  // Used by bottom status icon
+  &.status-failed {
+    color: @background-color-error;
+  }
+  &.status-passed{
+    color: @background-color-success;
+  }
+  &.status-skip{
+    color: @background-color-warning;
+  }
+}
+
+.tester-view {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+
+	.output {
+	  overflow: auto;
+		background-color: inherit;
+    height: 100%;
+    padding: 0px !important;
+    font-family: 'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+    font-size: 1em;
+    cursor: text;
+    -webkit-user-select: text;
+
+    &.running {
+      background-image: url('images/octocat-spinner-128.gif');
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 64px;
+      opacity: 0.5;
+    }
+	}
+}
+
+.tester-toolbar {
+  width: 100%;
+  padding: 0px 5px 0px 5px;
+  line-height: 2.5em;
+}
+
+.tester-messages {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+
+  div {
+    margin-right: 0px !important;
+  }
+
+  .tester-messages-container {
+    height: 100%;
+    width: 100%;
+    overflow: overlay;
+  }
+
+  .tester-message-header {
+    width: 100%;
+    cursor: pointer;
+    background-color: @panel-heading-background-color !important;
+    font-weight: 700;
+    word-break: break-word;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: flex;
+    min-height: 1.5em;
+    .sort-indicator {
+      position: absolute;
+      transform: scale(0.6);
+    }
+    .tester-message-cell:hover {
+      color: @text-color-selected
+    }
+  }
+  .tester-header-resizer {
+    cursor: ew-resize;
+    float: right;
+    width: 5px;
+    height: 100%;
+    margin-right: -3px;
+    z-index: 1;
+  }
+  .tester-message-row {
+    cursor: pointer;
+    word-break: break-word;
+    text-overflow: ellipsis;
+    display: flex;
+    -webkit-user-select: text;
+  }
+  .tester-message-row:nth-child(odd){
+    background-color: @background-color-highlight;
+  }
+  .tester-message-row:hover{
+    background-color: @panel-heading-border-color;
+    color: @text-color-selected;
+  }
+  .tester-message-cell {
+    border-left: 1px solid @panel-heading-border-color;
+    overflow: hidden;
+    padding: 2px 4px;
+    word-break: break-word;
+    text-overflow: inherit;
+  }
+  .tester-message-state {
+    min-width: 4rem;
+  }
+  .tester-message-state-icon {
+    min-width: 3rem;
+    span {
+      padding: 0px 0px 0px 4px;
+    }
+    .icon::before {
+      transform: scale(0.8);
+      bottom: -2px;
+    }
+    .sort-indicator{
+      margin-left: -16px;
+    }
+  }
+  .tester-message-duration {
+    min-width: 5rem;
+  }
+  .tester-message-title {
+    min-width: 50px;
+  }
+  .tester-message-error {
+    min-width: 50px;
+  }
+  .tester-message-location {
+    min-width: 5rem;
+  }
+  .tester-empty-container {
+    font-style: italic;
+    padding: 1em;
+    text-align: center;
+  }
+  .tester-header {
+    border-top: 1px solid @panel-heading-border-color;
+    border-bottom: 1px solid @panel-heading-border-color;
+    padding-bottom: 4px;
+  }
+}
+
+.tester-tooltip-title {
+  float: left;
+}
+
+.tester-bottom-status {
+  min-width: 1.5em;
+  line-height: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  &[hidden] {
+    display: none;
+  }
+  &.tester-status-failed {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  &.tester-status-passed {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  &.tester-status-skipped {
+    border-radius: 0;
+  }
+}
+
+.tester-bottom-container {
+  margin-right: .6em;
+  [hidden] {
+    display: none;
+  }
+}
+
+.tester-inline-message {
+  border: 1px solid @base-border-color;
+  max-height: 1.7em;
+  overflow: auto;
+  background: @overlay-background-color;
+  color: @text-color-highlight;
+  border-radius: @component-border-radius;
+  padding: 0px 3px 0px 3px;
+  &.full-size {
+    max-height: 100%;
+  }
+}
+
+.tester-inline-message-tail {
+  margin-top: -1.6em;
+  margin-left: 1em;
+  z-index: 0;
+}
+
+.tester-resize-handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  cursor: row-resize;
+  z-index: 3;
+}
+
+.tester-wait-button {
+  opacity: 1;
+  background-image: linear-gradient(to right, transparent 50%, rgba(0, 0, 0, 0.15) 50%) !important;
+  background-size: 10px 100%;
+  -webkit-animation: tester-waiting-animation 0.5s linear infinite;
+}
+@-webkit-keyframes tester-waiting-animation {
+  100% { background-position: -10px 0px; }
+}
+
+.tester-wait-bottom-status {
+  &.icon-sync {
+    cursor: wait;
+  }
+  &.icon-sync::before {
+    @keyframes tester-wait-animation {
+      100% { transform: rotate(360deg); }
+    }
+    animation: tester-wait-animation 2s linear infinite;
+  }
+}

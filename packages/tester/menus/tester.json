@@ -1,0 +1,73 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Tester",
+        "submenu": [
+          {
+            "label": "Toggle console output",
+            "command": "tester:toggle-tester-output"
+          },
+          {
+            "label": "Toggle result view",
+            "command": "tester:toggle-tester-result"
+          },
+          {
+            "label": "Toggle full size inline errors",
+            "command": "tester:toggle-full-size-inline-errors"
+          },
+          {
+            "label": "Test",
+            "command": "tester:test"
+          },
+          {
+            "label": "Stop",
+            "command": "tester:stop"
+          }
+        ]
+      }
+    ],
+    ".tester-view .output": [
+      {
+        "label": "Copy",
+        "command": "core:copy"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Tester",
+          "submenu": [
+            {
+              "label": "Toggle tester output",
+              "command": "tester:toggle-tester-output"
+            },
+            {
+              "label": "Toggle tester result view",
+              "command": "tester:toggle-tester-result"
+            },
+            {
+              "label": "Toggle full size inline errors",
+              "command": "tester:toggle-full-size-inline-errors"
+            },
+            {
+              "label": "Test",
+              "command": "tester:test"
+            },
+            {
+              "label": "Test Project",
+              "command": "tester:test-project"
+            },
+            {
+              "label": "Stop",
+              "command": "tester:stop"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
